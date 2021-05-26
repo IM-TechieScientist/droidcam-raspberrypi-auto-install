@@ -10,20 +10,20 @@ sudo make deb &&
 sudo dpkg -i libjpeg-turbo_2.1.0_armhf.deb &&
 sudo apt install raspberrypi-kernel-headers &&
 sudo apt install libavutil-dev &&
-sudo apt install libswscale-dev
-sudo apt install libasound2-dev
-sudo apt install libspeex-dev
-sudo apt install libusbmuxd-dev
-sudo apt install gtk+-3.0
-sudo apt install libappindicator3-dev
-cd
-cd droidcam
-make droidcam-cli
-make droidcam
-sudo ./install-client
-sudo ./install-video
-echo The Installation has completed..now droidcam will be launched..
-sudo ./droidcam
+sudo apt install libswscale-dev &&
+sudo apt install libasound2-dev &&
+sudo apt install libspeex-dev &&
+sudo apt install libusbmuxd-dev &&
+sudo apt install gtk+-3.0 &&
+sudo apt install libappindicator3-dev &&
+cd &&
+cd droidcam &&
+make droidcam-cli &&
+make droidcam &&
+sudo ./install-client &&
+sudo ./install-video &&
+echo The Installation has completed..use "sudo ./droidcam" to launch droidcam &&
+exit
 
 
 
